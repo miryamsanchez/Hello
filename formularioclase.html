@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header{
+        background-image: url(./flor.jpg);
+        min-height: 10vh;
+ 
+    }
+    nav{
+        background-color: cadetblue;
+        }
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        text-align: center; 
+        padding: 10px;
+        border-top: 5px solid rgba(255, 255, 255,0.3); 
+        border-bottom: 5px solid rgba(0, 0, 0, 0.1);
+    }
+    body{
+        background-image: url(./nube.jpeg);
+        min-height: max-content;
+        color: white;
+    }
+    form{
+        text-align: center;
+
+    }
+    button{
+        background-color: rgb(68, 67, 74);
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        border: 5px solid rgba(255, 255, 255,0.3);
+         
+        
+    }
+    input{
+        border: 2px solid rgba(110, 99, 99, 0.291);
+    }
+    label{
+        font-size: large;
+    }
+    
+</style>
+<header>
+
+</header>
+<nav class="container">
+     <div>Quienes somos</div>
+     <div>Valores</div>
+     <div>Contactanos</div>
+</nav>
+<body>
+    <form action="procesar.php" >
+        <label>Nombre</label><br>
+        <input type="text" name="name" placeholder=" ANA PEREZ" required/><br>
+        Correo Electronico<br> <input type="email" name="email" placeholder="casa@gmail.com" /> <br>
+        <label>Motivo de la consulta</label><br>
+        <select name="motivo">
+            <option value="1">Informacion de los productos</option>
+            <option value="2">Consulta administrativa</option>
+            <option value="3">Presentar una reclamacion</option>
+        </select><br>
+        <label>Mensaje</label><br>
+        <textarea name="mensaje" cols="20" rows="10"></textarea><br>
+        <button type="submit" name="enviar">Enviar</button>
+        <button type="reset" name="limpiar">Limpiar</button>
+    </form>
+    
+</body>
+</html>
